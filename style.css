@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    border-radius: 70%;
+    float: left;
+    padding-top:1% ;
+    padding-left: 10%;
+}
+
+.title {
+    text-align: center;
+    padding-top: 4%;
+    font-size: xx-large;
+    background:url("headerbg.jpg");
+    height: 20vh;
+}
+.nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+}
+.nav li{
+    float: left;
+    font-size: x-large;
+}
+.nav li a{
+    display: block;
+    color:blanchedalmond;
+    padding: 14px 75px;
+    text-decoration: none;
+}
+.nav li a:hover{
+    background-color:darkred
+}
+.sidebar {
+    width: 200px;
+    background-image: url("sidebar.jpg");
+    /* position: fixed; */
+    float: left;
+    height: 54.5vw;
+    overflow: hidden;
+    text-align: center;
+  }
+  .sidebar ul{
+      list-style-type: none;
+  }
+  .sidebar li{
+      color: white;
+      font-size: large;
+      padding: 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+  }
+  .sidebar h2{
+      color: darksalmon;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+ .content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 71vh;
+    font-size: larger;
+    background-image: url("content.jpg");
+  }
+  .content img{
+      float:right;
+      height: 40vh;
+  }
+  .content h1{
+      text-align: center;
+  }
+  .photograph{
+    margin-left: 200px;
+  }
+  /*My Pictures*/
+  .container {
+    position: relative;
+    width: 20%;
+    float: left;
+  }
+  
+  .image1 {
+    display: block;
+    width: 17.2vw;
+    height: 36.1vh;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 20vw;
+    height: 0;
+    transition: .5s ease;
+    float: left;
+  }
+  
+  .container:hover .overlay1 {
+    height: 100%;
+  }
+  
+  .text1 {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }  
+  .image2{
+      display: block;
+      width: 17.2vw;
+      height: 36.1vh;
+    }
+  .photograph h2{
+    text-align: center;
+    background-color: darkgoldenrod;
+  }
+/*Footer*/
+
+ footer{
+  background-color:darkorange;
+  position:relative;
+  width: 100%;
+  float: inline-end;
+  font-size: larger;
+} 
+.column1{
+  float: left;
+  text-align: center;
+}
+.column2{
+  float: left;
+  text-align: center;
+  padding-left: 22%;
+}
+.column3{
+  float: right;
+  text-align: center;
+}
+

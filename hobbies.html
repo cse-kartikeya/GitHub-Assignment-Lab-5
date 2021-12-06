@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+        /*  import google fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* all similar content styling codes */
+        section {
+            padding: 100px 0;
+        }
+
+        .max-width {
+            max-width: 1300px;
+            padding: 0 80px;
+            margin: auto;
+        }
+
+        .services {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .services .serv-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        section .title {
+            position: relative;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        section .title::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            width: 180px;
+            height: 3px;
+            background: #111;
+            transform: translateX(-50%);
+        }
+
+        section .title::after {
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            font-size: 20px;
+            color: crimson;
+            padding: 0 5px;
+            background: #fff;
+            transform: translateX(-50%);
+        }
+
+        /* services section styling */
+        .services {
+            color: #fff;
+            background: #111;
+        }
+
+        .services .title::before {
+            background: #fff;
+        }
+
+        .services .title::after {
+            background: #111;
+            content: "what i provide";
+        }
+
+        .services .serv-content .card {
+            width: calc(33% - 20px);
+            background: #222;
+            text-align: center;
+            border-radius: 6px;
+            padding: 50px 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .services .serv-content .card:hover {
+            background: crimson;
+        }
+
+        .services .serv-content .card .box {
+            transition: all 0.3s ease;
+        }
+
+        .services .serv-content .card:hover .box {
+            transform: scale(1.05);
+        }
+
+        .services .serv-content .card i {
+            font-size: 50px;
+            color: crimson;
+            transition: color 0.3s ease;
+        }
+
+        .services .serv-content .card:hover i {
+            color: #fff;
+        }
+
+        .services .serv-content .card .text {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 10px 0 7px 0;
+        }
+
+        /* responsive media query start */
+        @media (max-width: 947px) {
+            .services .serv-content .card {
+                width: calc(50% - 10px);
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 690px) {
+            .services .serv-content .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h1 class="title"><b>My Hobbies</b></h1>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repudiandae laboriosam veniam
+                            sunt impedit!
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Coding</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id neque vero amet sapiente?
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem nemo repellendus numquam
+                            ipsa!
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Reading Books</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eaque ea minus ad iste
+                            error.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Traveling</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, velit sed. Numquam, animi
+                            sint.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Listening Songs</div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur beatae eos explicabo
+                            adipisci vel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
